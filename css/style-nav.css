@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap');
+@import url('./cores.css');
+
+*{
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    box-sizing: border-box;
+    color: var(--RPG-white);
+    font-family: 'Uncial Antiqua', cursive;
+}
+
+.nav.scroll{
+    background: var(--RPG-black-opacity);
+    box-shadow: none; 
+    transition: 0.8s;
+}
+
+.nav{
+    width: 100%;
+    max-width: var(--width-max);
+    background: var(--RPG-black);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    height: 5rem;
+    z-index: 100;
+    box-shadow: 0 .25rem 5px 2px var(--RPG-black-opacity);
+}  
+
+.logo{
+    align-items: center;
+    padding-left: 2rem;
+}
+
+.logo a{
+    font-size: 2rem;
+}
+
+.nav a{
+    color: var(--RPG-white);
+}
+
+.nav a:hover{
+    color: var(--highlight-color);
+}
+
+.navmenu{
+    width: 100%;
+    max-width: var(--width-max);
+    position: absolute;
+    top: 5rem;
+    left: 0;
+    height: 0;
+    transition: 0.5s ease;
+    text-align: right;
+    visibility: hidden;
+    background: var(--RPG-black);
+}
+
+.menu a{
+    display: block;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: .25rem 1.5rem .25rem 0;
+}
+
+.menu a:hover{
+    color: var(--RPG-black);
+    background: var(--RPG-gradient-violet);
+}
+
+.linha{
+    display: block;
+    width: 95%;
+    height: 0.125rem;
+    background: var(--RPG-white);
+    opacity: 0.25;
+    margin: 1rem auto;
+}
+
+.icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 2rem;
+    padding-right: 1.5rem;
+}
+
+.icons a{
+    font-size: 2.5rem;
+
+}
+
+/*##############################################################################################*/
+/*Estilo do Menu Hamburger*/
+.btn-menu{
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    color: var(--highlight-color);
+    padding-block: 1rem;
+    cursor: pointer;
+    padding-right: 2rem;
+}
+
+.hamburger{
+    border-top: 0.125rem solid;
+    width: 1.5rem;
+}
+
+.hamburger::before,
+.hamburger::after{
+    content: "";
+    display: block;
+    width: 1.5rem;
+    height: 0.125rem;
+    background: currentColor; /*Cor atual herdada*/
+    margin-top: 0.3125rem;
+    position: relative;
+    transition: 0.3s;
+}
+
+/*##############################################################################################*/
+/*Estilo do Menu Hamburger Ativo*/
+.nav.active {
+    background: var(--RPG-black);
+}
+
+.nav.active .navmenu{
+    height: calc(100vh - 5rem);
+    visibility: visible;
+}
+
+.nav.active .hamburger{
+    border-top-color: transparent;
+}
+
+.nav.active .hamburger::before{
+    transform: rotate(135deg);
+}
+
+.nav.active .hamburger::after{
+    transform: rotate(-135deg);
+    top: -0.4375rem;
+}
+
+/*##############################################################################################*/
+.footer{
+    background-color: var(--RPG-black);
+    color: var(--RPG-violet);
+    height: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.copiryt{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .5rem;
+}
+

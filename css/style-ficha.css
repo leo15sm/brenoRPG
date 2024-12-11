@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sanchez:wght@400&display=swap');
+@import url('./cores.css');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0 auto;
+    max-width: var(--width-max);
+    background-image: url('../images/background-rpg.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Dá um efeito de paralaxe */
+    background-position: center;
+}
+
+header{
+    padding-top: 6rem;
+    font-family: 'Cinzel', serif;
+}
+
+.ficha-container{
+    color: var(--highlight-color);
+    font-weight: bold;
+    font-family: 'Cinzel', serif;
+    margin: 0 auto;
+    padding: 1.25rem; /* 20px */
+    width: 70%;
+    background-color: var(--RPG-black-opacity);
+    border: 0.125rem solid var(--border-color); /* 2px */
+    border-radius: 0.625rem; /* 10px */
+    box-shadow: 0 0 0.9375rem var(--box-shadow-color); /* 15px */
+
+}
+
+.ficha-row {
+    display: flex;
+    flex-direction: column;
+}
+
+.ficha-colum {
+    margin: 0 auto;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+}
+
+.titulo {
+    color: var(--highlight-color);
+    font-size: 1.8rem;
+    margin: 1.25rem; 
+    padding: 5px;
+    background-color: var(--RPG-black-opacity);
+}
+
+.rpg-table {
+    /* width: 100%; */
+    margin: 0 auto;
+    text-align: center;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+}
+
+.rpg-table th, .rpg-table td {
+    padding: 0.625rem;
+    border: 0.125rem solid var(--border-color);
+}
+
+.rpg-table input[type="text"],
+.rpg-table input[type="number"],
+.rpg-table select {
+    padding: 0.3125rem; /* 5px */
+    color: var(--RPG-white);
+    font-weight: 600;
+    text-align: right;
+    background-color: var(--input-bg);
+    border: 0.0625rem solid var(--border-color); /* 1px */
+    border-radius: 0.3125rem; /* 5px */
+}
+
+.rpg-table input[type="text"]{
+    width: 6rem;
+}
+
+.rpg-table input[type="number"]{
+    width: 3.5rem;
+}
+
+.rpg-table tr:nth-child(even) {
+    background-color: var(--row-alt-bg);
+}
+
+.rpg-table input[type="text"]:focus,
+.rpg-table input[type="number"]:focus,
+.rpg-table select:focus {
+    outline: none;
+    border-color: var(--highlight-color);
+}
+
+.rpg-table .dados-column {
+    width: 7rem; 
+}
+
+.especial {
+    text-transform: capitalize; /* Capitaliza a primeira letra de cada palavra */
+    white-space: pre; /* Preserve espaços em branco */
+}
+
+.especial::after {
+    content: ' '; /* Adiciona um espaço após a palavra "especial" */
+}
+
+/* Se quiser, você pode usar um pseudo-elemento para separar as palavras */
+.especial {
+    display: inline-block; /* Garante que o pseudo-elemento funcione corretamente */
+}

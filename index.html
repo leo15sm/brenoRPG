@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Drock</title>
+    <link rel="icon" type="image/png" href="./images/icon.png">
+
+    <!-- iCONS DO GOOGLE -->
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- FOLHAS DE ESTILO -->
+    <link rel="stylesheet" href="./css/style-nav.css">
+    <link rel="stylesheet" href="./css/style-ficha.css">
+
+    <!-- SCRIPTS JS -->
+    <script defer src="./js/script.js"></script>
+    <script type="module" defer src="./js/FichaController.js"></script>
+</head>
+<body>
+    <nav id="out-nav"></nav>
+    
+    <header class="titulo">
+        <h1>Drock Verso</h1>
+    </header>
+
+    <main class="ficha-container">
+        <section class="ficha-colum">
+            <!-- Tabela de raça -->
+            <table class="rpg-table">
+                <tr>
+                    <td>jogador</td>
+                    <td>
+                        <select name="jogador" id="selectJogador" class="dados-column">
+                            <!-- As opções serão adicionadas aqui pelo JavaScript -->
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>nome</td>
+                    <td><input type="text" id="nome" name="nome" readOnly = true></td>
+                </tr>
+                <tr>
+                    <td>nação</td>
+                    <td><input type="text" id="nacao" name="nacao" readOnly = true></td>
+                </tr>
+                <tr>
+                    <td>classe</td>
+                    <td><input type="text" id="classe" name="classe" readOnly = true></td>
+                </tr>
+
+                <tr>
+                    <td>gene-x</td>
+                    <td><input type="text" id="gene" name="gene" readOnly = true></td>
+                </tr>
+                
+                <tr>
+                    <td>elemento</td>
+                    <td><input type="text" id="elemento" name="elemento" readOnly = true></td>
+                </tr>
+                <tr>
+                    <td>nivel</td>
+                    <td><input type="text" id="nivel" name="nivel" readOnly = true></td>
+                </tr>
+                <tr>
+                    <td>xp</td>
+                    <td><input type="text" id="xp" name="xp" readOnly = true></td>
+                </tr>
+            </table>
+                
+            <br>
+
+            <!-- Tabela de Atributos -->
+            <table id="atributos" class="rpg-table">
+                 <!-- As linhas e colunas serão adicionadas pelo JavaScript -->
+                <thead></thead>
+                <tbody></tbody>
+            </table>
+
+    </main>
+</body>
+</html>

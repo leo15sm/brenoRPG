@@ -1,0 +1,25 @@
+:root {
+    --RPG-white: rgba(255, 255, 255, 1);
+    --RPG-black: rgba(0, 0, 0, 1);
+    --RPG-gray: rgb(134, 133, 133);
+    --RPG-blue: rgb(0, 123, 255, 1);
+    --RPG-blue-dark: rgb(0, 86, 179, 1);
+    --RPG-violet: rgb(138, 43, 226, 1);
+    --RPG-black-opacity: rgba(0, 0, 0, .7);
+    --RPG-gradient-violet: linear-gradient(to right, rgb(0, 0, 0) 40%, rgb(138, 43, 226));
+    --RPG-gold: rgba(255, 215, 0, 1); /* Cor dourada */
+
+    --width-max: 720px;
+    --width-min: 720px;
+
+    --background-color: #0d0d0d; /* Preto profundo */
+    --text-color: #d4d4d4; /* Cinza claro para legibilidade */
+    --text-red: #8b0000; /* Vermelho sangue escuro */
+    --text-gold: #7a601a; /* Dourado envelhecido e mais fosco */
+    --border-color: #4a2f2f; /* Bordô profundo para bordas */
+    --highlight-color: #7e2499; /* Roxo sombrio para destaques */
+    --input-bg: #181818; /* Preto fosco para inputs */
+    --container-bg: #222; /* Preto acinzentado para containers */
+    --row-alt-bg: #181818; /* Preto mais suave para alternância */
+    --box-shadow-color: rgba(0, 0, 0, 0.8); /* Sombras quase opacas */
+}
