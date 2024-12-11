@@ -18,8 +18,10 @@
     --text-gold: #7a601a; /* Dourado envelhecido e mais fosco */
     --border-color: #4a2f2f; /* Bordô profundo para bordas */
     --highlight-color: #7e2499; /* Roxo sombrio para destaques */
-    --input-bg: #181818; /* Preto fosco para inputs */
+    --input-bg: #302b2b; /* Preto fosco para inputs */
     --container-bg: #222; /* Preto acinzentado para containers */
     --row-alt-bg: #181818; /* Preto mais suave para alternância */
-    --box-shadow-color: rgba(0, 0, 0, 0.8); /* Sombras quase opacas */
+
+    --RPG-black-opacity2: rgba(0, 0, 0, .9);
+    --RPG-black-opacity3: rgba(0, 0, 0, .3);
 }
