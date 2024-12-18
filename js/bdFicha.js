@@ -19,11 +19,11 @@ export const players = [
     ),
      /*###########################################*/
     new Personagem(
-        "Leo", "Depende", "Nação",
-        new Bild("classe", "elemento", "gene"),
-        new Atributos(1000, 100, 100, 100, 100, 100),
+        "Leo", "Erebus", "Trevas",
+        new Bild("Necromante", "Vento", "Trevas"),
+        new Atributos(300, 2, 4, 10, 4, 10),
         //hp, forc, defesa, pdf, sdef, speed
-        new Progresso(10, 100)
+        new Progresso(0, 0)
         //nivel, xp
     ),
     new Personagem(
